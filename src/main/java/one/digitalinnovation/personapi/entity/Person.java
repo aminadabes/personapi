@@ -1,14 +1,15 @@
-package one.digitalinnovation.personapi.model;
-
+package one.digitalinnovation.personapi.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import one.digitalinnovation.personapi.entity.Phone;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.List;
+
+import java.time.LocalDate;
 
 @Entity
 @Data
@@ -32,7 +33,7 @@ public class Person {
 
     private LocalDate birthDate;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
+    @OneToMany(fetch = FetchType.LAZY,
+            cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE })
     private List<Phone> phones;
 }
-

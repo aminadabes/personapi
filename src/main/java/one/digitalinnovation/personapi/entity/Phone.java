@@ -1,4 +1,4 @@
-package one.digitalinnovation.personapi.model;
+package one.digitalinnovation.personapi.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 import one.digitalinnovation.personapi.enums.PhoneType;
 
 import javax.persistence.*;
-
 
 @Entity
 @Data
