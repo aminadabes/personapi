@@ -31,4 +31,10 @@ public class PersonController {
         return personService.listPerson();
     }
 
+    @GetMapping("/{id}")
+    public PersonDTO findById(@PathVariable Long id) throws PersonNotFoundException {
+        return  personService.findById(id);
+    }
+
+
 }
