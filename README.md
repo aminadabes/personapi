@@ -38,6 +38,14 @@ Conta no GitHub para o armazenamento do seu projeto na nuvem.</br>
 Conta no Heroku para o deploy do projeto na nuvem</br>
 Para testar as funcionalidades dos métodos HTTP, foi usado o postman.
 
+### **O que fiz no arquivo application.properties?** 
+Criei três arquivos application.properties: 
+* application.properties - nessa escolho qual banco vou conectar
+* application-h2.properties - banco de teste não guarda nada em memória
+* application-mysql.properties
+* application-postgresql.properties
+
+
 ### Descrição das atividades
 
  - Criação de modelo de dados para o mapeamento de entidades em bancos de dados.
