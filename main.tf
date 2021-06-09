@@ -14,7 +14,7 @@ resource "docker_container" "application" {
 
 # Find the latest Ubuntu precise image.
 resource "docker_image" "application" {
-  name = "pengbai/docker-supermario"
+  name = "phpmyadmin/phpmyadmin"
 }
 
 terraform {
