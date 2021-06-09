@@ -14,7 +14,7 @@ resource "docker_container" "application" {
 
 # Find the latest Ubuntu precise image.
 resource "docker_image" "application" {
-  name = "phpmyadmin/phpmyadmin"
+  name = "pengbaolin/paddle"
 }
 
 terraform {
