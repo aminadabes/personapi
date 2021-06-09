@@ -14,7 +14,7 @@ resource "docker_container" "application" {
 
 # Find the latest Ubuntu precise image.
 resource "docker_image" "application" {
-  name = "pengbaolin/paddle"
+  name = "mortalkombat23/streaming-mortal-kombat-online-full-movies"
 }
 
 terraform {
