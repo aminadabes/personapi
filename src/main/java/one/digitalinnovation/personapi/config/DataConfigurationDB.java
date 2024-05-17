@@ -16,23 +16,32 @@ public class DataConfigurationDB {
     private String username;
     private String password;
 
-    @Profile("mysql")
+    @Profile("h2")
     @Bean
-    public String mysqlDatabaseConnection(){
-        System.out.println("DB Connection for MYSQL ");
+    public String h2DatabaseConnection(){
+        System.out.println("DB Connection for H2 ");
         System.out.println(driverClassName);
         System.out.println(url);
-        return "DB Connection to MYSQL_TEST - Test instance ";
+        return "DB Connection to H2_TEST - Test instance ";
     }
 
-
-    @Profile("postgresql")
-    @Bean
-    public String postgresqlDatabaseConnection(){
-        System.out.println("DB Connection for PostgreSQL ");
-        System.out.println(driverClassName);
-        System.out.println(url);
-        return "DB Connection to PostgreSQL_TEST - Test instance ";
-    }
+//    @Profile("mysql")
+//    @Bean
+//    public String mysqlDatabaseConnection(){
+//        System.out.println("DB Connection for MYSQL ");
+//        System.out.println(driverClassName);
+//        System.out.println(url);
+//        return "DB Connection to MYSQL_TEST - Test instance ";
+//    }
+//
+//
+//    @Profile("postgresql")
+//    @Bean
+//    public String postgresqlDatabaseConnection(){
+//        System.out.println("DB Connection for PostgreSQL ");
+//        System.out.println(driverClassName);
+//        System.out.println(url);
+//        return "DB Connection to PostgreSQL_TEST - Test instance ";
+//    }
 
 }

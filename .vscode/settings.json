@@ -1,0 +1,5 @@
+{
+    "java.debug.settings.exceptionBreakpoint.skipClasses": [],
+    "java.configuration.runtimes": [],
+    "java.compile.nullAnalysis.mode": "automatic"
+}
